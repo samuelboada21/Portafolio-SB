@@ -1,7 +1,14 @@
+import About from "../components/About";
+import NavBar from "../components/NavBar";
+
 function Principal() {
+
   return (
-    <div>Principal</div>
-  )
+    <>
+      <NavBar />
+      <About />
+    </>
+  );
 }
 
-export default Principal
+export default Principal;
