@@ -6,7 +6,7 @@ function NavBar() {
   const [w] = useMediaQuery("(min-width: 786px)");
 
   return (
-    <Flex justify="space-between" alignItems="center" padding="20px" shadow="md">
+    <Flex justify="space-between" alignItems="center" padding="20px" shadow="md" position="fixed" width="100%" backdropFilter="blur(10px)" zIndex="1">
       {w ? <NavItems /> : <NavItemsW />}
     </Flex>
   );

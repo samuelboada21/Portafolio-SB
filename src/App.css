@@ -4,3 +4,37 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #ffffffaa); */
+
+  @keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(10px);
+    }
+  }
+  
+  .shake-animation {
+    animation: shake 0.8s ease-in-out forwards;
+  }
+
+  @keyframes balance {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    10%, 30%   {
+      transform: rotate(10deg);
+    }
+    20%{
+      transform: rotate(-10deg);
+    }
+  }
+  
+  .balance-animation {
+    display: inline-block;
+    animation: balance 0.9s ease-out forwards;
+  }
+  

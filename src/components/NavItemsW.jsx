@@ -41,7 +41,7 @@ function NavItemsW() {
       </div>
       <Flex justifyContent={"flex-end"} width="100%">
         <Button bg="transparent" onClick={onOpen}>
-          <Icon as={FaBars}></Icon>
+          <Icon as={FaBars} fontSize="20px"></Icon>
         </Button>
       </Flex>
 
