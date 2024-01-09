@@ -6,6 +6,7 @@ import {
   Button,
   useColorMode,
   Box,
+  Link,
 } from "@chakra-ui/react";
 import theme from "../utils/Chakra-theme";
 import { BsSunFill } from "react-icons/bs";
@@ -28,22 +29,46 @@ function NavItems() {
         />
       </div>
       <Flex alignItems={"center"}>
-        <Text fontSize="xl" fontWeight={"semibold"} mx="5">
+        <Link
+          href="#about"
+          style={{ textDecoration: "none" }}
+          fontSize="xl"
+          fontWeight={"semibold"}
+          mx="5"
+        >
           About
-        </Text>
-        <Text fontSize="xl" fontWeight={"semibold"} mx="5">
+        </Link>
+        <Link
+          href="#skills"
+          style={{ textDecoration: "none" }}
+          fontSize="xl"
+          fontWeight={"semibold"}
+          mx="5"
+        >
           Skills
-        </Text>
-        <Text fontSize="xl" fontWeight={"semibold"} mx="5">
+        </Link>
+        <Link
+          href="#projects"
+          style={{ textDecoration: "none" }}
+          fontSize="xl"
+          fontWeight={"semibold"}
+          mx="5"
+        >
           Projects
-        </Text>
-        <Text fontSize="xl" fontWeight={"semibold"} ml="5">
+        </Link>
+        <Link
+          href="#skills"
+          style={{ textDecoration: "none" }}
+          fontSize="xl"
+          fontWeight={"semibold"}
+          ml="5"
+        >
           Contact
-        </Text>
+        </Link>
         <Button onClick={toggleColorMode} mx="5" bg="transparent" _hover="none">
           <Icon
             as={colorMode === "light" ? BsSunFill : IoMdMoon}
-            fontSize="x-large"
+            fontSize="28px"
           />
         </Button>
         <Box
@@ -56,7 +81,7 @@ function NavItems() {
           }
         >
           <Button
-            bg={colorMode === "light" ? "blue.100" : "blue.900"}
+            bg={colorMode === "light" ? "gray.200" : "gray.800"}
             borderRadius="20px"
             m="2px"
             _hover={{ background: "transparent" }}

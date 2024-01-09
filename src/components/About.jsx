@@ -7,14 +7,14 @@ function About() {
   return (
     <>
       {w && <Image />}
-      <Flex height="100%" justifyContent="center">
+      <Flex height="100%" justifyContent="center" id="about">
         <Flex
           direction={"column"}
-          maxWidth={["250px", "400px", "550px", "700px"]}
-          mt="120px"
+          maxWidth={ "650px"}
+          mt="150px"
+          mx="20px"
         >
           <Text
-            className="shake-animation"
             fontSize="l"
             fontWeight={"semibold"}
             my="5"
@@ -25,7 +25,6 @@ function About() {
             problems.
           </Text>
           <Text
-            className="shake-animation"
             fontSize={["4xl", "5xl", "6xl", "7xl"]}
             textAlign="center"
             w
@@ -38,27 +37,12 @@ function About() {
             Full Stack Web Developer
           </Text>
           <Text
-            className="shake-animation"
             fontSize="l"
             fontWeight={"semibold"}
             my="5"
             textAlign={"center"}
           >
-            Every day, I dedicate myself to learning and enhancing my skills to
-            offer more effective and creative development solutions. My goal is
-            to provide high-quality service, ensuring that each project not only
-            meets but exceeds expectations.
-          </Text>
-          <Text
-            className="shake-animation"
-            fontSize="l"
-            fontWeight={"semibold"}
-            my="5"
-            textAlign={"center"}
-          >
-            Thank you for visiting my website. I look forward to accompanying
-            you on your next web project. Let's create something amazing
-            together!
+            I am dedicated to learning and improving my skills to deliver more effective and creative development solutions.
           </Text>
         </Flex>
       </Flex>

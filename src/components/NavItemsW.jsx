@@ -13,6 +13,7 @@ import {
   useColorMode,
   useDisclosure,
   useMediaQuery,
+  Link,
 } from "@chakra-ui/react";
 import { FaBars } from "react-icons/fa6";
 import React from "react";
@@ -52,22 +53,66 @@ function NavItemsW() {
         size={w ? "xs" : "full"}
       >
         <DrawerOverlay />
-        <DrawerContent>
+        <DrawerContent bg={colorMode === "light" ? "#F6F0F9" : "#23053E"}>
           <DrawerCloseButton />
           <DrawerBody>
-            <Flex direction={"column"} alignItems={"center"}>
-              <Text fontSize="xl" fontWeight={"semibold"} my="2">
-                About
-              </Text>
-              <Text fontSize="xl" fontWeight={"semibold"} my="2">
-                Skills
-              </Text>
-              <Text fontSize="xl" fontWeight={"semibold"} my="2">
-                Projects
-              </Text>
-              <Text fontSize="xl" fontWeight={"semibold"} my="2">
-                Contact
-              </Text>
+            <Flex direction={"column"} alignItems={"center"} mt="25px">
+              <Link href="#about" style={{ textDecoration: "none" }} w={"100%"}>
+                <Button
+                  fontSize="xl"
+                  fontWeight={"semibold"}
+                  my="2"
+                  w={"100%"}
+                  bg={"transparent"}
+                >
+                  About
+                </Button>
+              </Link>
+              <Link
+                href="#skills"
+                style={{ textDecoration: "none" }}
+                w={"100%"}
+              >
+                <Button
+                  fontSize="xl"
+                  fontWeight={"semibold"}
+                  my="2"
+                  w={"100%"}
+                  bg={"transparent"}
+                >
+                  Skills
+                </Button>
+              </Link>
+              <Link
+                href="#projects"
+                style={{ textDecoration: "none" }}
+                w={"100%"}
+              >
+                <Button
+                  fontSize="xl"
+                  fontWeight={"semibold"}
+                  my="2"
+                  w={"100%"}
+                  bg={"transparent"}
+                >
+                  Projects
+                </Button>
+              </Link>
+              <Link
+                href="#contact"
+                style={{ textDecoration: "none" }}
+                w={"100%"}
+              >
+                <Button
+                  fontSize="xl"
+                  fontWeight={"semibold"}
+                  my="2"
+                  w={"100%"}
+                  bg={"transparent"}
+                >
+                  Contact
+                </Button>
+              </Link>
               <Box
                 bgGradient={theme.colors.gradient.button}
                 borderRadius="22px"
@@ -76,7 +121,7 @@ function NavItemsW() {
                     ? "0 0 12px rgba(0, 0, 0, 0.5)"
                     : "0 0px 12px rgba(255, 255, 255, 0.5)"
                 }
-                my="2"
+                my="3"
               >
                 <Button
                   bg={colorMode === "light" ? "gray.100" : "gray.700"}
@@ -91,7 +136,7 @@ function NavItemsW() {
               </Box>
               <Button
                 onClick={toggleColorMode}
-                my="2"
+                my="3"
                 bg="transparent"
                 _hover="none"
               >

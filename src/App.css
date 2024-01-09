@@ -1,40 +1,35 @@
-/* 
-.logo:hover {
-  filter: drop-shadow(0 0 2em #ff0000aa);
+html {
+  scroll-behavior: smooth;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #ffffffaa); */
 
-  @keyframes shake {
-    0%, 100% {
-      transform: translateX(0);
-    }
-    10%, 30%, 50%, 70%, 90% {
-      transform: translateX(-10px);
-    }
-    20%, 40%, 60%, 80% {
-      transform: translateX(10px);
-    }
-  }
-  
-  .shake-animation {
-    animation: shake 0.8s ease-in-out forwards;
-  }
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
 
-  @keyframes balance {
-    0%, 100% {
-      transform: rotate(0deg);
-    }
-    10%, 30%   {
-      transform: rotate(10deg);
-    }
-    20%{
-      transform: rotate(-10deg);
-    }
-  }
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: auto;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px; /* Padding vertical y horizontal */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%); /* Asegura que esté centrado respecto al icono */
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 12px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
   
-  .balance-animation {
-    display: inline-block;
-    animation: balance 0.9s ease-out forwards;
-  }
+
   
