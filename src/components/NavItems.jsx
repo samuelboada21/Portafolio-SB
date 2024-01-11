@@ -25,7 +25,6 @@ function NavItems() {
           }
           alt="Logo"
           w="120px"
-          borderRadius="20px"
         />
       </div>
       <Flex alignItems={"center"}>
@@ -74,11 +73,7 @@ function NavItems() {
         <Box
           bgGradient={theme.colors.gradient.button}
           borderRadius="22px"
-          boxShadow={
-            colorMode === "light"
-              ? "0 0 12px rgba(0, 0, 0, 0.5)"
-              : "0 0px 12px rgba(255, 255, 255, 0.5)"
-          }
+          boxShadow="0px 5px 10px rgba(0, 0, 0, 0.3)"
         >
           <Button
             bg={colorMode === "light" ? "gray.200" : "gray.800"}

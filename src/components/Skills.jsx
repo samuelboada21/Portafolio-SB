@@ -17,6 +17,7 @@ import {
 import { GrMysql } from "react-icons/gr";
 
 function Skills() {
+  // eslint-disable-next-line react/prop-types
   const Tooltip = ({ children, text }) => {
     return (
       <div className="tooltip">
@@ -42,8 +43,7 @@ function Skills() {
   ];
 
   return (
-    <>
-    <div style={{ paddingTop: '80px' }}>
+    <Flex direction={"column"} mx="20px">
       <Text
         fontSize={"4xl"}
         textAlign="center"
@@ -59,7 +59,6 @@ function Skills() {
         fontWeight={"semibold"}
         my="5"
         textAlign={"center"}
-        mx="20px"
       >
         I operate smoothly in both team environments and individual projects,
         distinguishing myself through responsibility and commitment.
@@ -69,7 +68,6 @@ function Skills() {
         fontWeight={"semibold"}
         my="5"
         textAlign={"center"}
-        mx="20px"
       >
         I have experience leading projects and work teams. I enjoy using tools
         that improve and facilitate development.
@@ -92,7 +90,7 @@ function Skills() {
         {iconList.map((IconComponent, index) => (
           <Flex
             key={index}
-            w={{ base: "auto", lg: "calc(100% / 7 - 30px)" }}
+            w={{ base: "auto", lg: "calc(100% / 6 - 30px)" }}
             justifyContent="center"
             mb="30px"
           >
@@ -106,8 +104,7 @@ function Skills() {
           </Flex>
         ))}
       </Flex>
-      </div>
-    </>
+    </Flex>
   );
 }
 

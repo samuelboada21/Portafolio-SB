@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Flex, Text, useMediaQuery } from "@chakra-ui/react";
 import theme from "../utils/Chakra-theme";
 import Image from "./ImageBack";
@@ -7,12 +8,11 @@ function About() {
   return (
     <>
       {w && <Image />}
-      <Flex height="100%" justifyContent="center" id="about">
+      <Flex height="100%" justifyContent="center" id="about" mx="20px">
         <Flex
           direction={"column"}
           maxWidth={ "650px"}
           mt="150px"
-          mx="20px"
         >
           <Text
             fontSize="l"

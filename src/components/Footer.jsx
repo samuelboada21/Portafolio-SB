@@ -1,7 +1,8 @@
+import { Flex } from "@chakra-ui/react"
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <Flex direction={"column"} mx={"20px"}>Footer</Flex>
   )
 }
 

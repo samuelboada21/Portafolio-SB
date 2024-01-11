@@ -116,11 +116,7 @@ function NavItemsW() {
               <Box
                 bgGradient={theme.colors.gradient.button}
                 borderRadius="22px"
-                boxShadow={
-                  colorMode === "light"
-                    ? "0 0 12px rgba(0, 0, 0, 0.5)"
-                    : "0 0px 12px rgba(255, 255, 255, 0.5)"
-                }
+                boxShadow="0px 5px 10px rgba(0, 0, 0, 0.3)"
                 my="3"
               >
                 <Button

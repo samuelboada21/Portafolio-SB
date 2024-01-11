@@ -3,32 +3,24 @@ import Background from "./Background";
 
 function ImageBack() {
   return (
-    <Flex
-      width="270px"
-      height="380px"
-      mt="93px"
-      //   borderBottomRightRadius="300px"
-      position="absolute"
-    >
-      <Flex
-      width="290px"
-      height="400px"
-      // ml="15px"
-      // mt={"2px"}
+    <Flex width="270px" height="355px" mt="93px" position="absolute">
+      {/* <Flex
+        width="280px"
+        height="390px"
         borderBottomRightRadius="210px"
-        // borderBottomLeftRadius="60px"
-      position="absolute"
-      bg={"black"}
-    ></Flex>
+        position="absolute"
+        bg={"black"}
+      ></Flex> */}
       <Image
-        src={"/public/Perfil2.png"}
+        src={"/public/perfil.png"}
         zIndex={"1"}
-        alt="Logo"
-        // w="300px"
-        mt={"40px"}
-        h={"350px"}
+        alt="profile"
+        w="300px"
+        // mt={"41px"}
+        h={"355.5px"}
         borderBottomRightRadius="200px"
-        style={{ transform: 'rotate(20deg)' }}
+        boxShadow="0px 10px 15px rgba(0, 0, 0, 0.5)"
+        // style={{ transform: 'rotate(0.2deg)' }}
       />
       <Background
         style={{
