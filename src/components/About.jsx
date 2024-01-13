@@ -15,7 +15,7 @@ function About() {
           mt="150px"
         >
           <Text
-            fontSize="l"
+            fontSize="17px"
             fontWeight={"semibold"}
             my="5"
             textAlign={"center"}
@@ -37,7 +37,7 @@ function About() {
             Full Stack Web Developer
           </Text>
           <Text
-            fontSize="l"
+            fontSize="17px"
             fontWeight={"semibold"}
             my="5"
             textAlign={"center"}

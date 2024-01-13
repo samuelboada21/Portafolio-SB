@@ -1,6 +1,5 @@
 import {
   Image,
-  Text,
   Flex,
   Icon,
   Button,
@@ -76,14 +75,13 @@ function NavItems() {
           boxShadow="0px 5px 10px rgba(0, 0, 0, 0.3)"
         >
           <Button
+            rightIcon={<ImProfile />}
             bg={colorMode === "light" ? "gray.200" : "gray.800"}
             borderRadius="20px"
             m="2px"
             _hover={{ background: "transparent" }}
           >
-            <Text fontSize="xl" fontWeight="semibold" mx="5">
-              CV <Icon as={ImProfile} fontSize="medium" ml="1" />
-            </Text>
+            RESUME
           </Button>
         </Box>
       </Flex>

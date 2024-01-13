@@ -14,12 +14,11 @@ html {
   color: #fff;
   text-align: center;
   border-radius: 6px;
-  padding: 5px 5px; /* Padding vertical y horizontal */
-  position: absolute;
+  padding: 5px 5px;
+  position: absolute; /* Cambiado de 'relative' a 'absolute' */
   z-index: 1;
-  top: 100%;
   left: 50%;
-  transform: translateX(-50%); /* Asegura que esté centrado respecto al icono */
+  transform: translateX(-50%);
   opacity: 0;
   transition: opacity 0.3s;
   font-size: 12px;
@@ -28,6 +27,14 @@ html {
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+
+.tooltip .tooltiptext-bottom {
+  top: 100%;
+}
+
+.tooltip .tooltiptext-top {
+  bottom: 100%;
 }
 
   

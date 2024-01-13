@@ -9,7 +9,6 @@ import {
   Flex,
   Icon,
   Image,
-  Text,
   useColorMode,
   useDisclosure,
   useMediaQuery,
@@ -120,14 +119,13 @@ function NavItemsW() {
                 my="3"
               >
                 <Button
-                  bg={colorMode === "light" ? "gray.100" : "gray.700"}
+                  rightIcon={<ImProfile />}
+                  bg={colorMode === "light" ? "gray.200" : "gray.800"}
                   borderRadius="20px"
                   m="2px"
                   _hover={{ background: "transparent" }}
                 >
-                  <Text fontSize="xl" fontWeight="semibold" mx="5">
-                    CV <Icon as={ImProfile} fontSize="medium" ml="1" />
-                  </Text>
+                  RESUME
                 </Button>
               </Box>
               <Button
