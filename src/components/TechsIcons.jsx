@@ -39,9 +39,9 @@ function TechsIcons() {
   return (
     <>
       <Text
-        fontSize={["2xl", "3xl", "4xl"]}
+        fontSize={["3xl", "4xl", "5xl"]}
         textAlign="center"
-        fontFamily="Archivo Black"
+        fontWeight={"bold"}
         lineHeight="shorter"
         my="50px"
       >

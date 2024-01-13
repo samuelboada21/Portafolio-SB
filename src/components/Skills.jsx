@@ -5,9 +5,9 @@ function Skills() {
   return (
     <Flex direction={"column"} mx="20px">
       <Text
-        fontSize={["2xl", "3xl", "4xl"]}
+        fontSize={["3xl", "4xl", "5xl"]}
+        fontWeight={"bold"}
         textAlign="center"
-        fontFamily="Archivo Black"
         lineHeight="shorter"
         id="skills"
         pt="100px"

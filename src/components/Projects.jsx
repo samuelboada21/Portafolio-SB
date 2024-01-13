@@ -32,9 +32,9 @@ const Projects = () => {
   return (
     <>
       <Text
-        fontSize={["2xl", "3xl", "4xl"]}
+        fontSize={["3xl", "4xl", "5xl"]}
+        fontWeight={"bold"}
         textAlign="center"
-        fontFamily="Archivo Black"
         id="projects"
         pt="100px"
         mb="20px"
