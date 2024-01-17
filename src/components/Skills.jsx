@@ -1,11 +1,17 @@
 import { Text, Flex } from "@chakra-ui/react";
 import TechsIcons from "./TechsIcons";
-
 function Skills() {
   return (
-    <Flex direction={"column"} mx="20px">
+    <Flex
+      direction={"column"}
+      height="100%"
+      justifyContent="center"
+      maxWidth="1280px"
+      mx="auto"
+      px="5"
+    >
       <Text
-        fontSize={["3xl", "4xl", "5xl"]}
+        fontSize={["2xl", "3xl", "4xl", "5xl"]}
         fontWeight={"bold"}
         textAlign="center"
         lineHeight="shorter"
@@ -15,15 +21,24 @@ function Skills() {
       >
         Skills
       </Text>
-      <Text fontSize="18px" fontWeight={"semibold"} my="5" textAlign={"center"}>
+      <Text
+        fontSize={{ base: "14px", sm: "18px" }}
+        fontWeight={"semibold"}
+        my="5"
+        textAlign={{ base: "left", sm: "center" }}
+      >
         I operate smoothly in both team environments and individual projects,
         distinguishing myself through responsibility and commitment.
       </Text>
-      <Text fontSize="18px" fontWeight={"semibold"} textAlign={"center"}>
+      <Text
+        fontSize={{ base: "14px", sm: "18px" }}
+        fontWeight={"semibold"}
+        textAlign={{ base: "left", sm: "center" }}
+      >
         I have experience leading projects and work teams. I enjoy using tools
         that improve and facilitate development.
       </Text>
-      <TechsIcons/>
+      <TechsIcons />
     </Flex>
   );
 }

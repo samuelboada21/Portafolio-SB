@@ -12,15 +12,17 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 import { FaGithub } from "react-icons/fa";
+import { IoMdLink } from "react-icons/io";
 import { iconList } from "./TechsIcons";
 import { Toolip } from "./Toolip";
+import theme from "../utils/Chakra-theme";
 
-const ProjectCard = ({ title, imageUrl, githubUrl, techs }) => {
+const ProjectCard = ({ title, imageUrl, githubUrl, liveUrl, techs }) => {
   const [w] = useMediaQuery("(min-width: 400px)");
   const filteredTechs = iconList.filter((tech) => techs.includes(tech.name));
 
   return (
-    <Flex direction={"column"}>
+    <Flex direction={"column"} w={"100%"}>
       <Card
         borderRadius="20px"
         overflow="hidden"
@@ -33,7 +35,7 @@ const ProjectCard = ({ title, imageUrl, githubUrl, techs }) => {
             src={imageUrl}
             alt={`Imagen de ${title}`}
             borderRadius="lg"
-            w={"100%"}
+            w={"500px"}
             h={"260px"}
           />
           <Stack mt="3" spacing="1">
@@ -42,19 +44,25 @@ const ProjectCard = ({ title, imageUrl, githubUrl, techs }) => {
               justifyContent="space-between"
               my={"10px"}
             >
-              <Text fontSize="xl" mb="2" fontWeight={"bold"}>
+              <Text
+                fontSize={{ base: "l", sm: "xl" }}
+                mb="2"
+                fontWeight={"bold"}
+              >
                 {title}
               </Text>
-              <Flex>
+              <Flex wrap="wrap">
                 {filteredTechs.map((tech, index) => (
-                  <Toolip key={index} text={tech.name}>
-                    <Icon
-                      as={tech.icon}
-                      fontSize={"32px"}
-                      color={tech.color}
-                      ml={index > 0 ? 2 : 0}
-                    />
-                  </Toolip>
+                  <Flex key={index}>
+                    <Toolip text={tech.name}>
+                      <Icon
+                        as={tech.icon}
+                        fontSize={"32px"}
+                        color={tech.color}
+                        ml={index > 0 ? 2 : 0}
+                      />
+                    </Toolip>
+                  </Flex>
                 ))}
               </Flex>
             </Flex>
@@ -64,8 +72,9 @@ const ProjectCard = ({ title, imageUrl, githubUrl, techs }) => {
             >
               <Button
                 leftIcon={<FaGithub />}
-                variant="solid"
-                colorScheme="blue"
+                bg={theme.colors.gradient.buttonv}
+                _hover={"none"}
+                color={"white"}
                 onClick={() => window.open(githubUrl, "_blank")}
                 w={"110px"}
                 mb={"10px"}
@@ -73,11 +82,12 @@ const ProjectCard = ({ title, imageUrl, githubUrl, techs }) => {
                 GitHub
               </Button>
               <Button
-                leftIcon={<FaGithub />}
-                variant="solid"
-                colorScheme="red"
+                leftIcon={<IoMdLink size={"21px"} />}
+                bg={theme.colors.gradient.button}
+                _hover={"none"}
+                color={"white"}
                 w={"110px"}
-                onClick={() => window.open(githubUrl, "_blank")}
+                onClick={() => window.open(liveUrl, "_blank")}
               >
                 Live
               </Button>

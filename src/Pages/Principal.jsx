@@ -6,7 +6,7 @@ import theme from "../utils/Chakra-theme";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
-import Footer from "../components/Footer"
+import Footer from "../components/Footer";
 
 function Principal() {
   const { colorMode } = useColorMode();
@@ -16,14 +16,14 @@ function Principal() {
       : theme.colors.gradient.trioscuro;
   return (
     <>
-      <Box bg={colorS}>
-        <NavBar />
-        <About />
-        <Skills/>
-        <Projects/>
-        <Contact/>
-        <Footer/>
-      </Box>
+      <Box bg={colorS} >
+          <NavBar />
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+          <Footer />
+        </Box>
     </>
   );
 }

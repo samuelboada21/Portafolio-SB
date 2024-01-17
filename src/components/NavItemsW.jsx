@@ -113,7 +113,7 @@ function NavItemsW() {
                 </Button>
               </Link>
               <Box
-                bgGradient={theme.colors.gradient.button}
+                bgGradient={theme.colors.gradient.title}
                 borderRadius="22px"
                 boxShadow="0px 5px 10px rgba(0, 0, 0, 0.3)"
                 my="3"
@@ -123,7 +123,7 @@ function NavItemsW() {
                   bg={colorMode === "light" ? "gray.200" : "gray.800"}
                   borderRadius="20px"
                   m="2px"
-                  _hover={{ background: "transparent" }}
+                  _hover={{ background: "transparent", color: "white" }}
                 >
                   RESUME
                 </Button>

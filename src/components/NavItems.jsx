@@ -16,17 +16,20 @@ function NavItems() {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <>
-      <div>
-        <Image
-          src={
-            colorMode === "light" ? "/public/LogoW.png" : "/public/LogoB.png"
-          }
-          alt="Logo"
-          w="120px"
-        />
-      </div>
-      <Flex alignItems={"center"}>
+    <Flex
+      maxWidth="1280px"
+      mx="auto"
+      px="5"
+      width="100%"
+      alignItems="center"
+      justifyContent="space-between"
+    >
+      <Image
+        src={colorMode === "light" ? "/public/LogoW.png" : "/public/LogoB.png"}
+        alt="Logo"
+        w="120px"
+      />
+      <Flex>
         <Link
           href="#about"
           style={{ textDecoration: "none" }}
@@ -55,7 +58,7 @@ function NavItems() {
           Projects
         </Link>
         <Link
-          href="#skills"
+          href="#contact"
           style={{ textDecoration: "none" }}
           fontSize="xl"
           fontWeight={"semibold"}
@@ -70,7 +73,7 @@ function NavItems() {
           />
         </Button>
         <Box
-          bgGradient={theme.colors.gradient.button}
+          bgGradient={theme.colors.gradient.title}
           borderRadius="22px"
           boxShadow="0px 5px 10px rgba(0, 0, 0, 0.3)"
         >
@@ -79,13 +82,13 @@ function NavItems() {
             bg={colorMode === "light" ? "gray.200" : "gray.800"}
             borderRadius="20px"
             m="2px"
-            _hover={{ background: "transparent" }}
+            _hover={{ background: "transparent", color: "white" }}
           >
             RESUME
           </Button>
         </Box>
       </Flex>
-    </>
+    </Flex>
   );
 }
 

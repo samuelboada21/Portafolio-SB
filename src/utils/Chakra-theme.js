@@ -12,7 +12,9 @@ const theme = extendTheme({
   },
   colors: {
     gradient: {
-      button: "linear-gradient(90deg,#842cd7,#21f5f1)",
+      button: "linear-gradient(90deg,#842cd7,#21CBF5)",
+      buttonv: "linear-gradient(90deg,#CC0EF1,#842cd7)",
+      title: "linear-gradient(90deg, #9F23D5, #21D2F5)",
       claro: "linear-gradient(135deg, #FFC100, #FFEC00 )",
       oscuro: "linear-gradient(135deg, #2D044E, #5F1E94)",
       triclaro: "linear-gradient(90deg, #F6F0F9 0%, #FFFFFF 50%, #F6F0F9 100%)",
@@ -24,7 +26,6 @@ const theme = extendTheme({
       goldSilver: "linear-gradient(135deg, #FFD700, #C0C0C0)",
       skyTurquoise: "linear-gradient(135deg, #87CEEB, #40E0D0)",
       lavenderViolet: "linear-gradient(135deg, #E6E6FA, #9370DB)",
-      title: "linear-gradient(90deg, #9F23D5, #21D2F5)",
       more: "linear-gradient(0deg,rgba(0,0,0,.2),rgba(0,0,0,.2)),linear-gradient(94.41deg,#842cd7 -0.69%,#21f5f1 108.6%);",
     },
   },
