@@ -32,6 +32,7 @@ const ProjectCard = ({ title, imageUrl, githubUrl, liveUrl, techs }) => {
       >
         <CardBody>
           <Image
+            className="scale-on-hover"
             src={imageUrl}
             alt={`Imagen de ${title}`}
             borderRadius="lg"
@@ -71,6 +72,7 @@ const ProjectCard = ({ title, imageUrl, githubUrl, liveUrl, techs }) => {
               flexDirection={{ base: "column", xs: "row" }}
             >
               <Button
+                className="pulse"
                 leftIcon={<FaGithub />}
                 bg={theme.colors.gradient.buttonv}
                 _hover={"none"}
@@ -82,6 +84,7 @@ const ProjectCard = ({ title, imageUrl, githubUrl, liveUrl, techs }) => {
                 GitHub
               </Button>
               <Button
+                className="pulse"
                 leftIcon={<IoMdLink size={"21px"} />}
                 bg={theme.colors.gradient.button}
                 _hover={"none"}

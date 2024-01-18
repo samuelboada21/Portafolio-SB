@@ -14,6 +14,7 @@ const theme = extendTheme({
     gradient: {
       button: "linear-gradient(90deg,#842cd7,#21CBF5)",
       buttonv: "linear-gradient(90deg,#CC0EF1,#842cd7)",
+      footer: "linear-gradient(90deg, #842cd7 0%, #B53FCB 50%, #842cd7 100%)",
       title: "linear-gradient(90deg, #9F23D5, #21D2F5)",
       claro: "linear-gradient(135deg, #FFC100, #FFEC00 )",
       oscuro: "linear-gradient(135deg, #2D044E, #5F1E94)",

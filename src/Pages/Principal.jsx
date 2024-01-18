@@ -16,7 +16,7 @@ function Principal() {
       : theme.colors.gradient.trioscuro;
   return (
     <>
-      <Box bg={colorS} >
+      <Box bg={colorS}>
           <NavBar />
           <About />
           <Skills />

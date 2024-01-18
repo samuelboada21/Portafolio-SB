@@ -37,6 +37,92 @@ html {
   bottom: 100%;
 }
 
-  
+.scale-on-hover {
+  transition: transform 0.3s ease-in-out;
+}
+
+.scale-on-hover:hover {
+  transform: scale(1.05);
+}
+
+/* animations.css */
+
+/* Efecto de Elevación (Shadow Lift) */
+.shadow-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* Efecto de Pulsación (Pulse) */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.pulse:hover {
+  animation: pulse 1s infinite;
+}
+
+/* Efecto de Oscilación (Swing) */
+@keyframes swing {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.swing:hover {
+  animation: swing 0.5s ease-in-out 2;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.bounce:hover {
+  animation: bounce 0.5s ease-in-out 1;
+}
+
+@keyframes moveRightAndBack {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px); /* Ajusta según la distancia deseada */
+  }
+}
+
+.animate-right:hover {
+  animation: moveRightAndBack 0.5s ease-in-out;
+}
+
+
+/* Estilo general de la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 7px; /* Ancho de la barra de desplazamiento */
+}
+
+/* Estilo del riel de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color de fondo */
+}
+
+/* Estilo del control deslizante de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color del control deslizante */
+}
+
+/* Estilo del control deslizante al pasar el mouse */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color al pasar el mouse */
+}
+
+/* Para Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
 
   

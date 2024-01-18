@@ -105,6 +105,7 @@ function Contact() {
                   </Text>
                 </Box>
                 <Button
+                className="animate-right"
                   w={"100px"}
                   bg={theme.colors.gradient.button}
                   color="white"

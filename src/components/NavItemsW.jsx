@@ -56,7 +56,7 @@ function NavItemsW() {
           <DrawerCloseButton />
           <DrawerBody>
             <Flex direction={"column"} alignItems={"center"} mt="25px">
-              <Link href="#about" style={{ textDecoration: "none" }} w={"100%"}>
+              <Link href="#about" style={{ textDecoration: "none" }} w={"100%"} onClick={onClose}>
                 <Button
                   fontSize="xl"
                   fontWeight={"semibold"}
@@ -71,6 +71,7 @@ function NavItemsW() {
                 href="#skills"
                 style={{ textDecoration: "none" }}
                 w={"100%"}
+                onClick={onClose}
               >
                 <Button
                   fontSize="xl"
@@ -78,6 +79,7 @@ function NavItemsW() {
                   my="2"
                   w={"100%"}
                   bg={"transparent"}
+                  onClick={onClose}
                 >
                   Skills
                 </Button>
@@ -86,6 +88,7 @@ function NavItemsW() {
                 href="#projects"
                 style={{ textDecoration: "none" }}
                 w={"100%"}
+                onClick={onClose}
               >
                 <Button
                   fontSize="xl"
@@ -101,6 +104,7 @@ function NavItemsW() {
                 href="#contact"
                 style={{ textDecoration: "none" }}
                 w={"100%"}
+                onClick={onClose}
               >
                 <Button
                   fontSize="xl"
