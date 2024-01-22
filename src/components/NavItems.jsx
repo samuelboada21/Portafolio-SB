@@ -73,7 +73,7 @@ function NavItems() {
           />
         </Button>
         <Box
-        className="pulse"
+          className="pulse"
           bgGradient={theme.colors.gradient.title}
           borderRadius="22px"
           boxShadow="0px 5px 10px rgba(0, 0, 0, 0.3)"
@@ -84,6 +84,12 @@ function NavItems() {
             borderRadius="20px"
             m="2px"
             _hover={{ background: "transparent", color: "white" }}
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/1OZ3ChgKjueET5J4myxM81r6XXGZ6nVTd/view?usp=drive_link",
+                "_blank"
+              )
+            }
           >
             RESUME
           </Button>
