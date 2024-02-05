@@ -74,7 +74,7 @@ function NavItems() {
         </Button>
         <Box
           className="pulse"
-          bgGradient={theme.colors.gradient.title}
+          bgGradient={theme.colors.gradient.button}
           borderRadius="22px"
           boxShadow="0px 5px 10px rgba(0, 0, 0, 0.3)"
         >

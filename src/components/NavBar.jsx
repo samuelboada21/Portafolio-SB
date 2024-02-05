@@ -30,7 +30,7 @@ function NavBar() {
       justify="space-between"
       alignItems="center"
       padding="20px"
-      shadow="md"
+      shadow="0px 0px 10px rgba(155,12,159,1)"
       position="fixed"
       width="100%"
       backdropFilter="blur(18px)"

@@ -1,6 +1,9 @@
 import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
+  config:{
+    initialColorMode: 'dark',
+  },
   breakpoints: {
     base: "0em",  // Por defecto en Chakra UI
     xs: '20em',   // 320px
@@ -12,10 +15,10 @@ const theme = extendTheme({
   },
   colors: {
     gradient: {
-      button: "linear-gradient(90deg,#842cd7,#21CBF5)",
-      buttonv: "linear-gradient(90deg,#CC0EF1,#842cd7)",
+      button: "linear-gradient(90deg,#9320FF 20%,#20D0FF)",
+      buttonv: "linear-gradient(90deg,#EE21FF,#9320FF 90%)",
       footer: "linear-gradient(90deg, #842cd7 0%, #B53FCB 50%, #842cd7 100%)",
-      title: "linear-gradient(90deg, #9F23D5, #21D2F5)",
+      title: "linear-gradient(90deg, #B622F7 30%, #21D2F5)",
       claro: "linear-gradient(135deg, #FFC100, #FFEC00 )",
       oscuro: "linear-gradient(135deg, #2D044E, #5F1E94)",
       triclaro: "linear-gradient(90deg, #F6F0F9 0%, #FFFFFF 50%, #F6F0F9 100%)",

@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
 import Principal  from "./Pages/Principal"
 import theme from './utils/Chakra-theme'
 import './App.css'
@@ -10,6 +10,7 @@ function App() {
   return (
     <>
     <ChakraProvider theme={theme}>
+      <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <BrowserRouter>
         <Routes>
           <Route index element={<Principal/>}/>

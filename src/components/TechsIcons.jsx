@@ -4,6 +4,7 @@ import {
   SiJavascript,
   SiChakraui,
   SiMongodb,
+  SiPostgresql 
 } from "react-icons/si";
 import {
   FaReact,
@@ -31,6 +32,7 @@ export const iconList = [
   { icon: FaGithub, name: "GitHub" },
   { icon: SiMongodb, name: "MongoDB", color: "#47A248" },
   { icon: GrMysql, name: "MySQL", color: "#4479A1" },
+  { icon: SiPostgresql, name: "PostgreSQL", color: "#336791" },
 ];
 
 function TechsIcons() {
@@ -56,7 +58,7 @@ function TechsIcons() {
         {iconList.map((IconComponent, index) => (
           <Flex
             key={index}
-            w={{ base: "auto", lg: "calc(100% / 6 - 30px)" }}
+            w={{ base: "auto", md:"calc(100%/6 - 30px)", lg: "calc(100% / 5 - 20px)" }}
             justifyContent="center"
             mb="30px"
           >

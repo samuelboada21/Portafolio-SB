@@ -4,32 +4,18 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
   const projects = [
     {
+      title: "Tasks Management",
+      imageUrl: "/public/project2.png",
+      githubUrl: "https://github.com/samuelboada21/MERN-Proyect",
+      liveUrl: "https://tasks-management-sb21.onrender.com",
+      techs: ["React.js", "Node.js", "MongoDB"],
+    },
+    {
       title: "Task App MERN",
-      imageUrl: "/public/perfil.png",
-      githubUrl: "https://github.com/ejemplo/proyecto1",
-      liveUrl: "https://desplegado.com",
-      techs: ["React.js", "JavaScript", "MongoDB", "Java", "MySQL", "HTML"],
-    },
-    {
-      title: "Proyecto 2",
-      imageUrl: "/public/perfil.png",
-      githubUrl: "https://github.com/ejemplo/proyecto2",
-      liveUrl: "https://desplegado.com",
-      techs: ["React", "JavaScript", "MySQL"],
-    },
-    {
-      title: "Proyecto 3",
-      imageUrl: "/public/perfil.png",
-      githubUrl: "https://github.com/ejemplo/proyecto2",
-      liveUrl: "https://desplegado.com",
-      techs: ["React", "Java"],
-    },
-    {
-      title: "Proyecto 4",
-      imageUrl: "/public/perfil.png",
-      githubUrl: "https://github.com/ejemplo/proyecto2",
-      liveUrl: "https://desplegado.com",
-      techs: ["React.js", "JavaScript"],
+      imageUrl: "/public/project1.png",
+      githubUrl: "https://github.com/samuelboada21/Spring-Employee-Reports",
+      liveUrl: "https://employee-sb.onrender.com",
+      techs: ["Java","SpringBoot", "Bootstrap","PostgreSQL"],
     },
   ];
 
