@@ -25,7 +25,7 @@ function NavItems() {
       justifyContent="space-between"
     >
       <Image
-        src={colorMode === "light" ? "/public/LogoW.png" : "/public/LogoB.png"}
+        src={colorMode === "light" ? "/LogoW.png" : "/LogoB.png"}
         alt="Logo"
         w="120px"
       />

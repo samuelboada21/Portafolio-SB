@@ -5,14 +5,14 @@ const Projects = () => {
   const projects = [
     {
       title: "Tasks Management",
-      imageUrl: "/public/project2.png",
+      imageUrl: "project2.png",
       githubUrl: "https://github.com/samuelboada21/MERN-Proyect",
       liveUrl: "https://tasks-management-sb21.onrender.com",
-      techs: ["React.js", "Node.js", "MongoDB"],
+      techs: ["React.js", "Node.js","JavaScript", "MongoDB"],
     },
     {
-      title: "Task App MERN",
-      imageUrl: "/public/project1.png",
+      title: "Employee Management",
+      imageUrl: "/project1.png",
       githubUrl: "https://github.com/samuelboada21/Spring-Employee-Reports",
       liveUrl: "https://employee-sb.onrender.com",
       techs: ["Java","SpringBoot", "Bootstrap","PostgreSQL"],

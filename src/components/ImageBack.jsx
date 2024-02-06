@@ -12,7 +12,7 @@ function ImageBack() {
         bg={"black"}
       ></Flex> */}
       <Image
-        src={"/public/perfil.png"}
+        src={"/perfil.png"}
         zIndex={"1"}
         alt="profile"
         w="300px"
