@@ -76,6 +76,7 @@ const ProjectCard = ({ title, imageUrl, githubUrl, liveUrl, techs }) => {
                 leftIcon={<FaGithub />}
                 bg={theme.colors.gradient.buttonv}
                 _hover={"none"}
+                _active={"none"}
                 color={"white"}
                 onClick={() => window.open(githubUrl, "_blank")}
                 w={"110px"}
@@ -88,6 +89,7 @@ const ProjectCard = ({ title, imageUrl, githubUrl, liveUrl, techs }) => {
                 leftIcon={<IoMdLink size={"21px"} />}
                 bg={theme.colors.gradient.button}
                 _hover={"none"}
+                _active={"none"}
                 color={"white"}
                 w={"110px"}
                 onClick={() => window.open(liveUrl, "_blank")}

@@ -110,6 +110,7 @@ function Contact() {
                   bg={theme.colors.gradient.button}
                   color="white"
                   _hover={"none"}
+                  _active={"none"}
                   type="submit"
                   rightIcon={<Icon as={MdSend} />}
                   boxShadow="md"
