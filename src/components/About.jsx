@@ -8,7 +8,7 @@ function About() {
   return (
     <>
       {w && (
-        <Flex maxWidth="1280px" mx="auto">
+        <Flex maxWidth="1400px" mx="auto">
           <ImageBack />
         </Flex>
       )}

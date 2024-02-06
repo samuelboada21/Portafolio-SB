@@ -4,13 +4,6 @@ import Background from "./Background";
 function ImageBack() {
   return (
     <Flex width="270px" height="355px" mt="93px" position="absolute">
-      {/* <Flex
-        width="280px"
-        height="390px"
-        borderBottomRightRadius="210px"
-        position="absolute"
-        bg={"black"}
-      ></Flex> */}
       <Image
         src={"/perfil.png"}
         zIndex={"1"}
