@@ -33,9 +33,10 @@ function About() {
             my="5"
             textAlign={{ base: "left", sm: "center" }}
           >
-            Hello! Welcome to my website. I'm Samuel Boada, passionate about web
+            {/* Hello! Welcome to my website. I'm Samuel Boada, passionate about web
             development and always ready to tackle new challenges and solve
-            problems.
+            problems. */}
+            ¡Hola! Bienvenidos a mi página web. Soy Samuel Boada, apasionado por el desarrollo web y siempre dispuesto a afrontar nuevos retos y resolver problemas.
           </Text>
           <Text
             fontSize={["2xl", "4xl", "5xl", "6xl", "7xl"]}
@@ -54,8 +55,9 @@ function About() {
             my="5"
             textAlign={{ base: "left", sm: "center" }}
           >
-            I am dedicated to learning and improving my skills to deliver more
-            effective and creative development solutions.
+            {/* I am dedicated to learning and improving my skills to deliver more
+            effective and creative development solutions. */}
+            Dedico parte de mi tiempo a seguir aprendiendo y mejorando mis habilidades para ofrecer soluciones de desarrollo más eficaces y creativas.
           </Text>
         </Flex>
       </Flex>

@@ -86,7 +86,7 @@ function NavItems() {
             _hover={{ background: "transparent", color: "white" }}
             onClick={() =>
               window.open(
-                "https://drive.google.com/file/d/110bKt9AKYQBrzhQ8CZsMi7Uyg0hsKBkf/view?usp=drive_link",
+                "https://drive.google.com/file/d/1kuyhZILDenRS_gZDAviJ9ZkEf7kr7ILs/view?usp=drive_link",
                 "_blank"
               )
             }

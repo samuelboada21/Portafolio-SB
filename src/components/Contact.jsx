@@ -31,8 +31,9 @@ function Contact() {
         textAlign={{ base: "left", sm: "center" }}
         maxW={"750px"}
       >
-        Thank you for visiting my website. I look forward to accompanying you on
-        your next web project. Let's create something amazing together!
+        {/* Thank you for visiting my website. I look forward to accompanying you on
+        your next web project. Let's create something amazing together! */}
+        Gracias por visitar mi sitio web. Espero poder acompañarle en su próximo proyecto web. ¡Creemos algo increíble juntos!
       </Text>
 
       <Flex justifyContent="center" width="100%">
@@ -41,7 +42,7 @@ function Contact() {
             <FormControl id="contact-form" width="100%">
               <Flex direction={{ base: "column", sm: "row" }} mb="4">
                 <FormControl flex="1" mr={{ base: "0", sm: "2" }}>
-                  <FormLabel htmlFor="firstName">First Name</FormLabel>
+                  <FormLabel htmlFor="firstName">Nombres</FormLabel>
                   <Input
                     borderColor="gray.400"
                     id="firstName"
@@ -56,7 +57,7 @@ function Contact() {
                   ml={{ base: "0", sm: "2" }}
                   mt={{ base: "4", sm: "0" }}
                 >
-                  <FormLabel htmlFor="lastName">Last Name</FormLabel>
+                  <FormLabel htmlFor="lastName">Apellidos</FormLabel>
                   <Input
                     borderColor="gray.400"
                     id="lastName"
@@ -79,7 +80,7 @@ function Contact() {
                 boxShadow="md"
               />
 
-              <FormLabel htmlFor="message">Message</FormLabel>
+              <FormLabel htmlFor="message">Mensaje</FormLabel>
               <Textarea
                 borderColor="gray.400"
                 id="message"
@@ -115,7 +116,7 @@ function Contact() {
                   rightIcon={<Icon as={MdSend} />}
                   boxShadow="md"
                 >
-                  Send
+                  Enviar
                 </Button>
               </Flex>
             </FormControl>

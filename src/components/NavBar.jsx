@@ -34,7 +34,7 @@ function NavBar() {
       position="fixed"
       width="100%"
       backdropFilter="blur(18px)"
-      zIndex="2"
+      zIndex="11"
       bg={triclaro}
     >
       {w ? <NavItems /> : <NavItemsW />}

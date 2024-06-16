@@ -21,23 +21,37 @@ function Skills() {
       >
         Skills
       </Text>
-      <Text
-        fontSize={{ base: "14px", sm: "18px" }}
-        fontWeight={"semibold"}
-        my="5"
-        textAlign={{ base: "left", sm: "center" }}
+      <Flex
+        direction={"column"}
+        // height="100%"
+        // justifyContent="center"
+        // px="5"
+        maxWidth="1100px"
+        mx="auto"
       >
-        I operate smoothly in both team environments and individual projects,
-        distinguishing myself through responsibility and commitment.
-      </Text>
-      <Text
-        fontSize={{ base: "14px", sm: "18px" }}
-        fontWeight={"semibold"}
-        textAlign={{ base: "left", sm: "center" }}
-      >
-        I have experience leading projects and work teams. I enjoy using tools
-        that improve and facilitate development.
-      </Text>
+        <Text
+          fontSize={{ base: "14px", sm: "18px" }}
+          fontWeight={"semibold"}
+          my="5"
+          textAlign={{ base: "left", sm: "center" }}
+        >
+          {/* I operate smoothly in both team environments and individual projects,
+        distinguishing myself through responsibility and commitment. */}
+          Me desenvuelvo con soltura tanto en entornos de equipo como en
+          proyectos individuales, distinguiéndome por mi responsabilidad y
+          compromiso.
+        </Text>
+        <Text
+          fontSize={{ base: "14px", sm: "18px" }}
+          fontWeight={"semibold"}
+          textAlign={{ base: "left", sm: "center" }}
+        >
+          {/* I have experience leading projects and work teams. I enjoy using tools
+          that improve and facilitate development. */}
+          Tengo experiencia como freelancer en proyectos compartidos e individuales, en un entorno académico. 
+        </Text>
+      </Flex>
+
       <TechsIcons />
     </Flex>
   );
