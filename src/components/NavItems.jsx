@@ -29,7 +29,7 @@ function NavItems() {
         alt="Logo"
         w="120px"
       />
-      <Flex>
+      <Flex alignItems="center">
         <Link
           href="#about"
           style={{ textDecoration: "none" }}
@@ -37,7 +37,7 @@ function NavItems() {
           fontWeight={"semibold"}
           mx="5"
         >
-          About
+          Principal
         </Link>
         <Link
           href="#skills"
@@ -46,7 +46,7 @@ function NavItems() {
           fontWeight={"semibold"}
           mx="5"
         >
-          Skills
+          Habilidades
         </Link>
         <Link
           href="#projects"
@@ -55,7 +55,7 @@ function NavItems() {
           fontWeight={"semibold"}
           mx="5"
         >
-          Projects
+          Proyectos
         </Link>
         <Link
           href="#contact"
@@ -64,7 +64,7 @@ function NavItems() {
           fontWeight={"semibold"}
           ml="5"
         >
-          Contact
+          Contacto
         </Link>
         <Button onClick={toggleColorMode} mx="5" bg="transparent" _hover="none">
           <Icon
@@ -91,7 +91,7 @@ function NavItems() {
               )
             }
           >
-            RESUME
+            CV
           </Button>
         </Box>
       </Flex>

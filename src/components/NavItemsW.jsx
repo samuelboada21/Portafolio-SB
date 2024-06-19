@@ -64,7 +64,7 @@ function NavItemsW() {
                   w={"100%"}
                   bg={"transparent"}
                 >
-                  About
+                  Principal
                 </Button>
               </Link>
               <Link
@@ -81,7 +81,7 @@ function NavItemsW() {
                   bg={"transparent"}
                   onClick={onClose}
                 >
-                  Skills
+                  Habilidades
                 </Button>
               </Link>
               <Link
@@ -97,7 +97,7 @@ function NavItemsW() {
                   w={"100%"}
                   bg={"transparent"}
                 >
-                  Projects
+                  Proyectos
                 </Button>
               </Link>
               <Link
@@ -113,7 +113,7 @@ function NavItemsW() {
                   w={"100%"}
                   bg={"transparent"}
                 >
-                  Contact
+                  Contacto
                 </Button>
               </Link>
               <Box
@@ -135,7 +135,7 @@ function NavItemsW() {
                     )
                   }
                 >
-                  RESUME
+                  CV
                 </Button>
               </Box>
               <Button

@@ -62,7 +62,7 @@ function About() {
         </Flex>
       </Flex>
       <Flex justifyContent={"center"}>
-        <Image src="/Fabout.png" mt={"50px"} />
+        <Image alt="Ilustration" src="/Fabout.png" mt={"50px"} />
       </Flex>
     </>
   );

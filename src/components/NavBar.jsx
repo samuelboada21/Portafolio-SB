@@ -3,7 +3,7 @@ import NavItems from "../components/NavItems";
 import NavItemsW from "../components/NavItemsW";
 
 function NavBar() {
-  const [w] = useMediaQuery("(min-width: 786px)");
+  const [w] = useMediaQuery("(min-width: 900px)");
   const { colorMode } = useColorMode();
 
   const hexToRGBA = (hex, opacity) => {

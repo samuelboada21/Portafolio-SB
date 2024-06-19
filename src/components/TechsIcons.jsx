@@ -41,13 +41,13 @@ function TechsIcons() {
   return (
     <>
       <Text
-         fontSize={["2xl","3xl", "4xl", "5xl"]}
+        fontSize={["2xl","3xl", "4xl", "5xl"]}
         textAlign="center"
         fontWeight={"bold"}
         lineHeight="shorter"
         my="50px"
       >
-        Technologies
+        Tecnologias
       </Text>
 
       <Flex

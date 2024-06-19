@@ -19,7 +19,7 @@ function Skills() {
         pt="100px"
         mb="20px"
       >
-        Skills
+        Habilidades
       </Text>
       <Flex
         direction={"column"}
@@ -37,8 +37,7 @@ function Skills() {
         >
           {/* I operate smoothly in both team environments and individual projects,
         distinguishing myself through responsibility and commitment. */}
-          Me desenvuelvo con soltura tanto en entornos de equipo como en
-          proyectos individuales, distinguiéndome por mi responsabilidad y
+          Me desenvuelvo con eficacia tanto en entornos de trabajo en equipo como en proyectos individuales, destacándome por mi responsabilidad y
           compromiso.
         </Text>
         <Text
@@ -48,7 +47,7 @@ function Skills() {
         >
           {/* I have experience leading projects and work teams. I enjoy using tools
           that improve and facilitate development. */}
-          Tengo experiencia como freelancer en proyectos compartidos e individuales, en un entorno académico. 
+          Tengo experiencia en la creación y mantenimiento de API REST utilizando Node.js y Spring Boot, lo que me ha permitido desarrollar soluciones robustas y escalables. Estoy familiarizado con herramientas y frameworks como Express, Hibernate, y JPA.
         </Text>
       </Flex>
 

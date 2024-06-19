@@ -51,7 +51,7 @@ const Projects = () => {
         pt="100px"
         mb="20px"
       >
-        Projects
+        Proyectos
       </Text>
       <Flex justifyContent={"center"}
         mx="auto"

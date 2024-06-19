@@ -6,7 +6,7 @@ function ImageBack() {
     <Flex width="270px" height="355px" mt="93px" position="absolute">
       <Image
         src={"/perfil.png"}
-        zIndex={"1"}
+        zIndex={1}
         alt="profile"
         w="300px"
         // mt={"41px"}

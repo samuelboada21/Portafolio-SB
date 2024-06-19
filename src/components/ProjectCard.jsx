@@ -53,7 +53,7 @@ const ProjectCard = ({
             alt={`Imagen de ${title}`}
             borderRadius="lg"
             w={"500px"}
-            h={"260px"}
+            h={{base:"auto", md:"280px"}}
           />
           <Stack mt="3" spacing="1">
             <Flex
@@ -76,7 +76,8 @@ const ProjectCard = ({
                         as={tech.icon}
                         fontSize={"32px"}
                         color={tech.color}
-                        ml={index > 0 ? 2 : 0}
+                        // ml={index > 0 ? 2 : 0}
+                        ml={2}
                       />
                     </Toolip>
                   </Flex>
@@ -112,7 +113,7 @@ const ProjectCard = ({
                     w={"110px"}
                     mb={"10px"}
                   >
-                    Details
+                    Detalles
                   </Button>
                 </PopoverTrigger>
                 <Portal>
@@ -150,7 +151,7 @@ const ProjectCard = ({
                   w={"110px"}
                   onClick={() => window.open(liveUrl, "_blank")}
                 >
-                  Live
+                  Ingresar
                 </Button>
               )}
             </ButtonGroup>
