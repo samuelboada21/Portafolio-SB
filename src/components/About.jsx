@@ -57,7 +57,7 @@ function About() {
           >
             {/* I am dedicated to learning and improving my skills to deliver more
             effective and creative development solutions. */}
-            Dedico parte de mi tiempo a seguir aprendiendo y mejorando mis habilidades para ofrecer soluciones de desarrollo más eficaces y creativas.
+            Dedico parte de mi tiempo a seguir aprendiendo y mejorando mis habilidades para ofrecer soluciones de desarrollo eficientes y creativas.
           </Text>
         </Flex>
       </Flex>

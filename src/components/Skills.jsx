@@ -37,7 +37,7 @@ function Skills() {
         >
           {/* I operate smoothly in both team environments and individual projects,
         distinguishing myself through responsibility and commitment. */}
-          Me desenvuelvo con eficacia tanto en entornos de trabajo en equipo como en proyectos individuales, destacándome por mi responsabilidad y
+          Me desenvuelvo de buena manera en entornos de trabajo en equipo y en proyectos individuales, destacando por mi responsabilidad y
           compromiso.
         </Text>
         <Text
