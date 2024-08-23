@@ -4,6 +4,15 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
   const projects = [
     {
+      title: "SWAG - Arquitectos",
+      description: "Sitio web estático enfocado en la presentación de renderizados arquitectónicos. El sitio ofrece una experiencia visual atractiva y optimizada para mostrar proyectos de arquitectura con alta calidad, siendo intuitiva su navigación.",
+      imageUrl: "swag.png",
+      githubUrl: "https://github.com/samuelboada21/PORTAFOLIO-ARQUI",
+      liveUrl: "https://swag-arquitectos.vercel.app/",
+      techs: ["React.js", "ChakraUI","JavaScript","CSS"],
+      flag: true,
+    },
+    {
       title: "Gestión de Tareas",
       description: "Aplicativo web con login y registro, cada usuario puede crear, editar, ver y eliminar sus tareas. Le permite al usuario asignar una fecha para realizar su tarea.",
       imageUrl: "project2.png",
